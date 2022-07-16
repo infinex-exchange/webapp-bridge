@@ -39,19 +39,19 @@
                                 <button type="button" class="btn btn-secondary w-100 toggle-peg" data-side="peg-out">Peg-out</button>
                             </div>
                         </div>
-                        <div class="row py-2 text-center">
+                        <div class="row py-2">
                             <h3>Select asset:</h3>
                         </div>
                         <div class="row py-2">
                             <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                         </div>
-                        <div class="row py-2 text-center">
+                        <div class="row py-2">
                             <h3>Select network:</h3>
                         </div>
                         <div class="row py-2">
                             <?php include(__DIR__.'/../../templates/select_net.php'); ?>
                         </div>
-                        <div class="row py-2 text-center">
+                        <div class="row py-2">
                             <h3>Address:</h3>
                         </div>
                         <div class="row py-2">
