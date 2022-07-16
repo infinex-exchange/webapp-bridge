@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('#bridge-preloader').hide();
     $('.peg-memo-wrapper').hide();
     $('#bridge-step2').hide();
+    #('.peg-out-text').hide();
     
     $(document).trigger('renderingStage');
     
@@ -18,11 +19,15 @@ $(document).ready(function() {
         if(side == 'peg-in') {
             $('.peg-toggle[data-side=peg-out]').addClass('btn-secondary');
             window.pegSide = 'PEG_IN';
+            $('.peg-in-text').show();
+            $('.peg-out-text').hide();
         }
         
         else {
             $('.peg-toggle[data-side=peg-in]').addClass('btn-secondary');
             window.pegSide = 'PEG_OUT';
+            $('.peg-in-text').hide();
+            $('.peg-out-text').show();
         }
     });
     

@@ -48,19 +48,21 @@
                                 </div>
                             </div>
                             <div class="row py-2">
-                                <h3>Select asset:</h3>
+                                <h3 class="peg-in-text">Asset to peg-in:</h3>
+                                <h3 class="peg-out-text">Asset to peg-out:</h3>
                             </div>
                             <div class="row py-2">
                                 <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                             </div>
                             <div class="row py-2">
-                                <h3>Select network:</h3>
+                                <h3 class="peg-in-text">Source network:</h3>
+                                <h3 class="peg-out-text">Destination network:</h3>
                             </div>
                             <div class="row py-2">
                                 <?php include(__DIR__.'/../../templates/select_net.php'); ?>
                             </div>
                             <div class="row py-2">
-                                <h3>Address:</h3>
+                                <h3>Destination address:</h3>
                             </div>
                             <div class="row py-2">
                                 <form>
