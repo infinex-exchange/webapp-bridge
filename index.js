@@ -1,5 +1,9 @@
 $(document).ready(function() {
     window.renderingStagesTarget = 1;
+    
+    $('#bridge-preloader').hide();
+    #('#bridge-step2').hide();
+    
     $(document).trigger('renderingStage');
     
     $('.toggle-peg').on('click', function() {
