@@ -18,6 +18,8 @@
         
             <div class="row h-rest m-0">
                 <div class="jumbotron col-12 col-lg-7 my-auto px-4 py-5">
+                    <div class="row">
+                    <div class="col-12">
                     <h1>Vayamos Bridge</h1>
                     <p>
                     With Vayamos Bridge you can wrap any asset supported by Vayamos Exchange to BPX blockchain tokens.
@@ -27,7 +29,11 @@
                     This cross-chain bridge improves interoperability between BPX and other blockchains
                     and gives you direct access to the world of DeFi on the BPX blockchain.
                     </p>
-                    <img src="/bridge/img/bridge.png" class="d-none d-lg-block img-fluid">
+                    </div>
+                    <div class="col-10 d-none d-lg-block">
+                        <img src="/bridge/img/bridge.png" class="img-fluid">
+                    </div>
+                    </div>
                 </div>
             
                 <div class="col-12 col-lg-5 my-auto">
