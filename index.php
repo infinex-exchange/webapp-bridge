@@ -7,10 +7,10 @@
     <body class="body-background">
     
         <!-- Preloader -->
-        <?php include(__DIR__'/../../templates/preloader.html'); ?>
+        <?php include(__DIR__.'/../../templates/preloader.html'); ?>
         
         <!-- Navbar -->
-        <?php include(__DIR__'/../../templates/navbar.php'); ?>
+        <?php include(__DIR__.'/../../templates/navbar.php'); ?>
         
         <!-- Root container -->
         <div id="root" class="container-fluid container-1500 h-rest pt-2 p-0">
