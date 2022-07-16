@@ -57,6 +57,9 @@
                         <div class="row py-2">
                             <input id="address" type="text" placeholder="Paste address" class="form-control" autocomplete="off">
                             <small id="help-address" class="form-text" style="display: none">Address is invalid</small>
+                        </div>
+                        <div class="row py-2 text-right">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>                  
                     </div>
                 </div>
