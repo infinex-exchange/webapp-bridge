@@ -4,6 +4,7 @@ $(document).ready(function() {
     
     $('.toggle-peg').on('click', function() {
         var side = $(this).data('side');
+        console.log(side);
                                   
         $('.toggle-peg').removeClass('btn-primary btn-secondary');
         
