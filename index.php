@@ -39,7 +39,7 @@
                 <div class="col-12 col-lg-5 p-0 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div id="bridge-step1">
-                            <div class="row mx-2 py-2">
+                            <div class="row mx-1 py-2">
                                 <div class="col-6 ps-2 pe-1">
                                     <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
                                 </div>
@@ -79,7 +79,7 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row mx-2 py-2 text-right">
+                            <div class="row mx-1 py-2 text-right">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
