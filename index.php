@@ -31,7 +31,7 @@
             
                 <div class="col-12 col-lg-5 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
-                        <div id="bridge-step1" class="d-none">
+                        <div id="bridge-step1">
                             <div class="row py-2">
                                 <div class="col-6 ps-2 pe-1">
                                     <button type="button" class="btn btn-primary w-100 toggle-peg" data-side="peg-in">Peg-in</button>
@@ -64,13 +64,13 @@
                             </div>
                         </div>
                         
-                        <div id="bridge-preloader" class="d-none">
+                        <div id="bridge-preloader">
                             <div class="row py-2 text-center">
                                 <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
                             </div>
                         </div>
                         
-                        <div class="bridge-step2">
+                        <div id="bridge-step2">
                             <div class="row py-2 flex-nowrap justify-content-evenly">
                                 <div class="col-auto text-center">
                                     <div class="p-1 rounded" style="background-color: var(--color-input);">
