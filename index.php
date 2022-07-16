@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <?php include(__DIR__.'/../../templates/head.php'); ?>
+        <script src="/js/ajax_scroll.js?<?php echo filemtime(__DIR__.'/../../js/ajax_scroll.js'); ?>"></script>
         <title>Bridge - Vayamos Exchange</title>
     </head>
     <body class="body-background">
