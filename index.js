@@ -4,18 +4,16 @@ $(document).ready(function() {
     
     $('.toggle-peg').on('click', function() {
         var side = $(this).data('side');
-        console.log(side);
                                   
         $('.toggle-peg').removeClass('btn-primary btn-secondary');
+        $(this).addClass('btn-primary');
         
         if(side == 'peg-in') {
-            $(this).addClass('btn-primary');
             $('.toggle-peg[data-side=peg-out]').addClass('btn-secondary');
         }
         
         else {
-            $(this).addClass('btn-secondary');
-            $('.toggle-peg[data-side=peg-in]').addClass('btn-primary');
+            $('.toggle-peg[data-side=peg-in]').addClass('btn-secondary');
         }
     });
 });
