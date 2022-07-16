@@ -78,8 +78,8 @@
                                         <span id="peg-from-net" class="p-1 secondary"></span>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <i class="fa-solid fa-forward fa-2x"></i>
+                                <div class="col-auto my-auto">
+                                    <i class="fa-solid fa-arrow-right fa-2x"></i>
                                 </div>
                                 <div class="col-auto text-center">
                                     <div class="p-1 rounded" style="background-color: var(--color-input);">
