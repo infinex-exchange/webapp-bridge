@@ -34,7 +34,7 @@
                             <h3>Select asset:</h3>
                         </div>
                         <div class="row py-2">
-                            <?php include(__DIR__'/../../templates/select_coin.php'); ?>
+                            <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                         </div>            
                     </div>
                 </div>
