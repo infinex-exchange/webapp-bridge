@@ -33,10 +33,10 @@
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div class="row py-2">
                             <div class="col-6 ps-2 pe-1">
-                                <button type="button" class="btn bg-green w-100 toggle-peg" data-side="peg-in">Peg-in</button>
+                                <button type="button" class="btn btn-primary w-100 toggle-peg" data-side="peg-in">Peg-in</button>
                             </div>
                             <div class="col-6 ps-1 pe-2">
-                                <button type="button" class="btn bg-red w-100 toggle-peg" data-side="peg-out">Peg-out</button>
+                                <button type="button" class="btn btn-muted w-100 toggle-peg" data-side="peg-out">Peg-out</button>
                             </div>
                         </div>
                         <div class="row py-2 text-center">
