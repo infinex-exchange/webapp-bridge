@@ -28,6 +28,7 @@
                     and gives you direct access to the world of DeFi on the BPX blockchain.
                     </p>
                     <div class="d-none d-lg-block" style="height: 300px"></div>
+                    <img src="/bridge/img/bridge.png" class="d-none d-lg-block img-fluid">
                 </div>
             
                 <div class="col-12 col-lg-5 my-auto">
