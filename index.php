@@ -27,7 +27,7 @@
                     This cross-chain bridge improves interoperability between BPX and other blockchains
                     and gives you direct access to the world of DeFi on the BPX blockchain.
                     </p>
-                    <img src="/bridge/img/bridge.png" class="d-none d-lg-block img-fluid">
+                    <img src="/bridge/img/bridge.png" class="d-none d-lg-block img-fluid" style="position: relative; bottom: 0px;">
                 </div>
             
                 <div class="col-12 col-lg-5 my-auto">
