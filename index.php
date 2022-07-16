@@ -50,7 +50,14 @@
                         </div>
                         <div class="row py-2">
                             <?php include(__DIR__.'/../../templates/select_net.php'); ?>
-                        </div>              
+                        </div>
+                        <div class="row py-2 text-center">
+                            <h3>Address:</h3>
+                        </div>
+                        <div class="row py-2">
+                            <input id="address" type="text" placeholder="Paste address" class="form-control" autocomplete="off">
+                            <small id="help-address" class="form-text" style="display: none">Address is invalid</small>
+                        </div>                  
                     </div>
                 </div>
 
