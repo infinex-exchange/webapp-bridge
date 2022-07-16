@@ -15,8 +15,8 @@
         <!-- Root container -->
         <div id="root" class="container-fluid container-1500 h-rest pt-2 p-0">
         
-            <div class="row h-100 m-0 px-4 py-5">
-                <div class="jumbotron col-12 col-lg-7 h-100">
+            <div class="row m-0 px-4 py-5">
+                <div class="jumbotron col-12 col-lg-7 h-rest">
                     <h1>Vayamos Bridge</h1>
                     <p>
                     With Vayamos Bridge you can wrap any asset supported by Vayamos Exchange to BPX blockchain tokens.
@@ -28,7 +28,7 @@
                     </p>
                 </div>
             
-                <div class="col-12 col-lg-5 h-100">
+                <div class="col-12 col-lg-5 h-rest">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div class="row py-2 text-center">
                             <h3>Market trend</h3>
