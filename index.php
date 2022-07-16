@@ -15,7 +15,7 @@
         <!-- Root container -->
         <div id="root" class="container-fluid container-1500 h-rest pt-2 p-0">
         
-            <div class="row m-0 px-4 py-5">
+            <div class="row h-100 m-0 px-4 py-5">
                 <div class="jumbotron col-12 col-lg-7 h-100">
                     <h1>Vayamos Bridge</h1>
                     <p>
