@@ -20,4 +20,8 @@ $(document).ready(function() {
             $('.toggle-peg[data-side=peg-in]').addClass('btn-secondary');
         }
     });
+    
+    $('#select-coin').on('change', function() {
+        initSelectNet( $('#select-coin').val() );
+    });
 });
