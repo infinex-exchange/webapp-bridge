@@ -26,6 +26,6 @@ $(document).ready(function() {
     });
     
     $('#select-net').on('change', function() {        
-        $('#peg-target-addr').prop('disabled', false).val('');
+        $('#peg-target-addr').prop('readonly', false).val('');
     });
 });

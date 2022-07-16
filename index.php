@@ -56,7 +56,7 @@
                                 <h3>Address:</h3>
                             </div>
                             <div class="row py-2">
-                                <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" disabled>
+                                <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" readonly>
                                 <small id="help-target-addr" class="form-text" style="display: none">Address is invalid</small>
                             </div>
                             <div class="row py-2 text-right">
