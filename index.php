@@ -31,35 +31,43 @@
             
                 <div class="col-12 col-lg-5 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
-                        <div class="row py-2">
-                            <div class="col-6 ps-2 pe-1">
-                                <button type="button" class="btn btn-primary w-100 toggle-peg" data-side="peg-in">Peg-in</button>
+                        <div id="bridge-step1" class="d-none">
+                            <div class="row py-2">
+                                <div class="col-6 ps-2 pe-1">
+                                    <button type="button" class="btn btn-primary w-100 toggle-peg" data-side="peg-in">Peg-in</button>
+                                </div>
+                                <div class="col-6 ps-1 pe-2">
+                                    <button type="button" class="btn btn-secondary w-100 toggle-peg" data-side="peg-out">Peg-out</button>
+                                </div>
                             </div>
-                            <div class="col-6 ps-1 pe-2">
-                                <button type="button" class="btn btn-secondary w-100 toggle-peg" data-side="peg-out">Peg-out</button>
+                            <div class="row py-2">
+                                <h3>Select asset:</h3>
+                            </div>
+                            <div class="row py-2">
+                                <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
+                            </div>
+                            <div class="row py-2">
+                                <h3>Select network:</h3>
+                            </div>
+                            <div class="row py-2">
+                                <?php include(__DIR__.'/../../templates/select_net.php'); ?>
+                            </div>
+                            <div class="row py-2">
+                                <h3>Address:</h3>
+                            </div>
+                            <div class="row py-2">
+                                <input id="address" type="text" placeholder="Paste address" class="form-control" autocomplete="off">
+                                <small id="help-address" class="form-text" style="display: none">Address is invalid</small>
+                            </div>
+                            <div class="row py-2 text-right">
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
-                        <div class="row py-2">
-                            <h3>Select asset:</h3>
-                        </div>
-                        <div class="row py-2">
-                            <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
-                        </div>
-                        <div class="row py-2">
-                            <h3>Select network:</h3>
-                        </div>
-                        <div class="row py-2">
-                            <?php include(__DIR__.'/../../templates/select_net.php'); ?>
-                        </div>
-                        <div class="row py-2">
-                            <h3>Address:</h3>
-                        </div>
-                        <div class="row py-2">
-                            <input id="address" type="text" placeholder="Paste address" class="form-control" autocomplete="off">
-                            <small id="help-address" class="form-text" style="display: none">Address is invalid</small>
-                        </div>
-                        <div class="row py-2 text-right">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                        <div id="bridge-preloader">
+                            <div class="row py-2 text-center">
+                                <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                            </div>
                         </div>                  
                     </div>
                 </div>
