@@ -31,7 +31,7 @@
                             </p>
                         </div>
                         <div class="col-8 d-none d-lg-block mx-auto">
-                            <div style="height: 200px"></div>
+                            <div style="height: 100px"></div>
                             <img src="/bridge/img/bridge.png" class="img-fluid">
                         </div>
                     </div>
