@@ -116,7 +116,7 @@
         </div>
         
         <?php include(__DIR__.'/../../templates/modals.php'); ?>
-        <script src="js/bridge.js?<?php echo filemtime(__DIR__.'/js/bridge.js'); ?>"></script>
+        <script src="/bridge/js/bridge.js?<?php echo filemtime(__DIR__.'/js/bridge.js'); ?>"></script>
         
         <!-- Footer -->
         <?php include(__DIR__.'/../../templates/footer.html'); ?>
