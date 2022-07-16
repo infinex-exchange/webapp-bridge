@@ -16,7 +16,7 @@
         <div id="root" class="container-fluid container-1500 h-rest pt-2 p-0">
         
             <div class="row m-0 px-4 py-5">
-                <div class="jumbotron col-12 col-lg-8">
+                <div class="jumbotron col-12 col-lg-7">
                     <h1>Vayamos Bridge</h1>
                     <p>
                     With Vayamos Bridge you can wrap any asset supported by Vayamos Exchange to BPX blockchain tokens.
@@ -27,10 +27,8 @@
                     and gives you direct access to the world of DeFi on the BPX blockchain.
                     </p>
                 </div>
-            </div>
-        
-            <div class="row gx-0 gx-lg-3 gy-3 m-0">
-                <div class="col-12">
+            
+                <div class="col-12 col-lg-5">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div class="row py-2 text-center">
                             <h3>Market trend</h3>
@@ -45,35 +43,6 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-6">
-                    <div class="p-2 p-lg-4 ui-card-light rounded">
-                        <div class="row py-2 text-center">
-                            <h3>Top gainers</h3>
-                        </div>
-                        <div class="row py-2 secondary">
-                            <div class="col-3 my-auto"><h5>Name</h5></div>
-                            <div class="col-4 my-auto text-end"><h5>Last price</h5></div>
-                            <div class="col-2 my-auto text-end"><h5>24h change</h5></div>
-                            <div class="col-3 my-auto text-end"><h5>24h volume</h5></div>
-                        </div>
-                        <div id="top-gainers-spot-data"></div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-lg-6">
-                    <div class="p-2 p-lg-4 ui-card-light rounded">
-                        <div class="row py-2 text-center">
-                            <h3>Top losers</h3>
-                        </div>                    
-                        <div class="row py-2 secondary">
-                            <div class="col-3 my-auto"><h5>Name</h5></div>
-                            <div class="col-4 my-auto text-end"><h5>Last price</h5></div>
-                            <div class="col-2 my-auto text-end"><h5>24h change</h5></div>
-                            <div class="col-3 my-auto text-end"><h5>24h volume</h5></div>
-                        </div>                    
-                        <div id="top-losers-spot-data"></div>
-                    </div>
-                </div>
             </div>
         
         <!-- / Root container -->
