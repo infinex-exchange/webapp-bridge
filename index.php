@@ -20,12 +20,9 @@
                     <h1>Vayamos Bridge</h1>
                     <p>
                     With Vayamos Bridge you can wrap any asset supported by Vayamos Exchange to BPX blockchain tokens.
-                    <br>
                     You can hold your wrapped tokens in your BPX wallet, trade them using offers and transfer them without fee.
-                    <br>
                     BPX tokens are pegged on a 1:1 basis to the underlying asset.
                     You can redeem your wrapped tokens back to the original asset at any time.
-                    <br>
                     This cross-chain bridge improves interoperability between BPX and other blockchains
                     and gives you direct access to the world of DeFi on the BPX blockchain.
                     </p>
