@@ -6,22 +6,26 @@ $(document).ready(function() {
     
     $(document).trigger('renderingStage');
     
-    $('.toggle-peg').on('click', function() {
+    $('.peg-togle').on('click', function() {
         var side = $(this).data('side');
                                   
-        $('.toggle-peg').removeClass('btn-primary btn-secondary');
+        $('.peg-toggle').removeClass('btn-primary btn-secondary');
         $(this).addClass('btn-primary');
         
         if(side == 'peg-in') {
-            $('.toggle-peg[data-side=peg-out]').addClass('btn-secondary');
+            $('.peg-toggle[data-side=peg-out]').addClass('btn-secondary');
         }
         
         else {
-            $('.toggle-peg[data-side=peg-in]').addClass('btn-secondary');
+            $('.peg-toggle[data-side=peg-in]').addClass('btn-secondary');
         }
     });
     
     $('#select-coin').on('change', function() {
         initSelectNet( $('#select-coin').val() );
+    });
+    
+    $('#select-net').on('change', function() {        
+        $('#peg-target-addr').prop('disabled', false).val('');
     });
 });

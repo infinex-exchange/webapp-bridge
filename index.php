@@ -34,10 +34,10 @@
                         <div id="bridge-step1">
                             <div class="row py-2">
                                 <div class="col-6 ps-2 pe-1">
-                                    <button type="button" class="btn btn-primary w-100 toggle-peg" data-side="peg-in">Peg-in</button>
+                                    <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
                                 </div>
                                 <div class="col-6 ps-1 pe-2">
-                                    <button type="button" class="btn btn-secondary w-100 toggle-peg" data-side="peg-out">Peg-out</button>
+                                    <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
                             </div>
                             <div class="row py-2">
@@ -56,8 +56,8 @@
                                 <h3>Address:</h3>
                             </div>
                             <div class="row py-2">
-                                <input id="address" type="text" placeholder="Paste address" class="form-control" autocomplete="off">
-                                <small id="help-address" class="form-text" style="display: none">Address is invalid</small>
+                                <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" disabled>
+                                <small id="help-target-addr" class="form-text" style="display: none">Address is invalid</small>
                             </div>
                             <div class="row py-2 text-right">
                                 <button type="submit" class="btn btn-primary">Submit</button>
