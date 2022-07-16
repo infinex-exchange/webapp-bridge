@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#bridge-preloader').hide();
     $('.peg-memo-wrapper').hide();
     $('#bridge-step2').hide();
-    #('.peg-out-text').hide();
+    $('.peg-out-text').hide();
     
     $(document).trigger('renderingStage');
     
