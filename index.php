@@ -59,6 +59,13 @@
                                 <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" readonly>
                                 <small id="help-target-addr" class="form-text" style="display: none">Address is invalid</small>
                             </div>
+                            <div class="row py-2 peg-memo-wrapper">
+                                <h3 id="peg-memo-name"></h3>
+                            </div>
+                            <div class="row py-2 peg-memo-wrapper">
+                                <input type="text" class="form-control" id="peg-target-memo" placeholder="Optional">
+                                <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
+                            </div>
                             <div class="row py-2 text-right">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
