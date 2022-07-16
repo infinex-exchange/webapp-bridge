@@ -31,15 +31,11 @@
                 <div class="col-12 col-lg-5 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div class="row py-2 text-center">
-                            <h3>Market trend</h3>
+                            <h3>Select asset:</h3>
                         </div>
-                        <div class="row py-2 secondary">
-                            <div class="col-3 my-auto"><h5>Name</h5></div>
-                            <div class="col-4 my-auto text-end"><h5>Last price</h5></div>
-                            <div class="col-2 my-auto text-end"><h5>24h change</h5></div>
-                            <div class="col-3 my-auto text-end"><h5>24h volume</h5></div>
+                        <div class="row py-2">
+                            <?php include(__DIR__'/../../templates/select_coin.php'); ?>
                         </div>            
-                        <div id="market-trend-spot-data"></div>
                     </div>
                 </div>
 
