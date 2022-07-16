@@ -64,9 +64,21 @@
                             </div>
                         </div>
                         
-                        <div id="bridge-preloader">
+                        <div id="bridge-preloader" class="d-none">
                             <div class="row py-2 text-center">
                                 <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="bridge-step2">
+                            <div class="row py-2 flex-nowrap">
+                                <div class="col-auto">
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa-solid fa-square-arrow-right fa-2x"></i>
+                                </div>
+                                <div class="col-auto">
+                                </div>
                             </div>
                         </div>                  
                     </div>
