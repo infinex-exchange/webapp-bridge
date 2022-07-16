@@ -71,11 +71,11 @@
                         </div>
                         
                         <div class="bridge-step2">
-                            <div class="row py-2 flex-nowrap">
+                            <div class="row py-2 flex-nowrap justify-content-evenly">
                                 <div class="col-auto">
                                 </div>
                                 <div class="col-auto">
-                                    <i class="fa-solid fa-square-arrow-right fa-2x"></i>
+                                    <i class="fa-solid fa-forward fa-2x"></i>
                                 </div>
                                 <div class="col-auto">
                                 </div>
