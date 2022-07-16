@@ -36,7 +36,7 @@
                     </div>
                 </div>
             
-                <div class="col-12 col-lg-5 my-auto">
+                <div class="col-12 col-lg-5 p-0 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div id="bridge-step1">
                             <div class="row py-2">
