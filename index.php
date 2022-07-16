@@ -39,7 +39,7 @@
                 <div class="col-12 col-lg-5 p-0 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div id="bridge-step1">
-                            <div class="row mx-1 py-2">
+                            <div class="row mx-2 py-2">
                                 <div class="col-6 ps-2 pe-1">
                                     <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
                                 </div>
@@ -47,39 +47,39 @@
                                     <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
                             </div>
-                            <div class="row mx-1 py-2">
+                            <div class="row py-2">
                                 <h3 class="peg-in-text">Asset to peg-in:</h3>
                                 <h3 class="peg-out-text">Asset to peg-out:</h3>
                             </div>
-                            <div class="row mx-1 py-2">
+                            <div class="row py-2">
                                 <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                             </div>
-                            <div class="row mx-2 py-2">
+                            <div class="row py-2">
                                 <h3 class="peg-in-text">Source network:</h3>
                                 <h3 class="peg-out-text">Destination network:</h3>
                             </div>
-                            <div class="row mx-1 py-2">
+                            <div class="row py-2">
                                 <?php include(__DIR__.'/../../templates/select_net.php'); ?>
                             </div>
-                            <div class="row mx-2 py-2">
+                            <div class="rowpy-2">
                                 <h3>Destination address:</h3>
                             </div>
-                            <div class="row mx-1 py-2">
+                            <div class="row py-2">
                                 <form>
                                 <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" readonly>
                                 </form>
                                 <small id="help-target-addr" class="form-text" style="display: none">Address is invalid</small>
                             </div>
-                            <div class="row mx-1 py-2 peg-memo-wrapper">
+                            <div class="row py-2 peg-memo-wrapper">
                                 <h3 id="peg-memo-name"></h3>
                             </div>
-                            <div class="row mx-2 py-2 peg-memo-wrapper">
+                            <div class="row py-2 peg-memo-wrapper">
                                 <form>
                                 <input type="text" class="form-control" id="peg-target-memo" placeholder="Optional">
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row mx-1 py-2 text-right">
+                            <div class="row mx-2 py-2 text-right">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
