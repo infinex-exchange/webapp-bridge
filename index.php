@@ -72,12 +72,20 @@
                         
                         <div class="bridge-step2">
                             <div class="row py-2 flex-nowrap justify-content-evenly">
-                                <div class="col-auto">
+                                <div class="col-auto text-center">
+                                    <div class="p-1 rounded" style="background-color: var(--color-input);">
+                                        <img id="peg-from-net-img" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                        <span id="peg-from-net" class="p-1 secondary"></span>
+                                    </div>
                                 </div>
                                 <div class="col-auto">
                                     <i class="fa-solid fa-forward fa-2x"></i>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto text-center">
+                                    <div class="p-1 rounded" style="background-color: var(--color-input);">
+                                        <img id="peg-to-net-img" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                        <span id="peg-to-net" class="p-1 secondary"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>                  
