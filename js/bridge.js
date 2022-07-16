@@ -9,7 +9,7 @@ $(document).ready(function() {
     
     window.pegSide = 'PEG_IN';
     
-    $('.peg-togle').on('click', function() {
+    $('.peg-toggle').on('click', function() {
         var side = $(this).data('side');
                                   
         $('.peg-toggle').removeClass('btn-primary btn-secondary');
