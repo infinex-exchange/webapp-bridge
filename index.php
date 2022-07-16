@@ -39,13 +39,15 @@
                 <div class="col-12 col-lg-5 p-0 my-auto">
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div id="bridge-step1">
-                            <div class="row mx-1 py-2">
+                            <div class="row py-2">
+                                <form>
                                 <div class="col-6 ps-2 pe-1">
                                     <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
                                 </div>
                                 <div class="col-6 ps-1 pe-2">
                                     <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
+                                </form>
                             </div>
                             <div class="row py-2">
                                 <h3 class="peg-in-text">Asset to peg-in:</h3>
@@ -79,8 +81,10 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row mx-1 py-2 text-right">
+                            <div class="row py-2 text-right">
+                                <form>
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                             </div>
                         </div>
                         
