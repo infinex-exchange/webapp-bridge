@@ -47,40 +47,42 @@
                                     <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
                             </div>
-                            <div class="row py-2">
+                            <div class="row pt-2">
                                 <h3 class="peg-in-text">Asset to peg-in:</h3>
                                 <h3 class="peg-out-text">Asset to peg-out:</h3>
                             </div>
-                            <div class="row py-2">
+                            <div class="row pb-2">
                                 <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                             </div>
-                            <div class="row py-2">
+                            <div class="row pt-2">
                                 <h3 class="peg-in-text">Source network:</h3>
                                 <h3 class="peg-out-text">Destination network:</h3>
                             </div>
-                            <div class="row py-2">
+                            <div class="row pb-2">
                                 <?php include(__DIR__.'/../../templates/select_net.php'); ?>
                             </div>
-                            <div class="rowpy-2">
+                            <div class="row pt-2">
                                 <h3>Destination address:</h3>
                             </div>
-                            <div class="row py-2">
+                            <div class="row pb-2">
                                 <form>
                                 <input id="peg-target-addr" type="text" placeholder="Paste address" class="form-control" autocomplete="off" readonly>
                                 </form>
                                 <small id="help-target-addr" class="form-text" style="display: none">Address is invalid</small>
                             </div>
-                            <div class="row py-2 peg-memo-wrapper">
+                            <div class="row pt-2 peg-memo-wrapper">
                                 <h3 id="peg-memo-name"></h3>
                             </div>
-                            <div class="row py-2 peg-memo-wrapper">
+                            <div class="row pb-2 peg-memo-wrapper">
                                 <form>
                                 <input type="text" class="form-control" id="peg-target-memo" placeholder="Optional">
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
                             <div class="row py-2 text-right">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <form>
+                                    <button type="submit" class="btn btn-primary ms-auto">Submit</button>
+                                </form>
                             </div>
                         </div>
                         
