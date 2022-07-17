@@ -80,8 +80,8 @@
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
                             <div class="row py-3 flex-nowrap">
-                                <div class="col-auto secondary me-auto">
-                                    Fee:
+                                <div class="col-auto me-auto">
+                                    <h5 class="secondary">Fee:</h5>
                                 </div>
                                 <div id="peg-fee-val" class="col-auto">
                                     -
