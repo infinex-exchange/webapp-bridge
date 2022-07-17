@@ -109,6 +109,7 @@ $(document).ready(function() {
                 url: config.apiUrl + '/bridge/validate',
                 type: 'POST',
                 data: JSON.stringify({
+                    side: window.pegSide,
                     asset: $('#select-coin').val(),
                     network: $('#select-net').data('network'),
                     address: $('#peg-target-addr').val()
@@ -152,6 +153,7 @@ $(document).ready(function() {
                 url: config.apiUrl + '/bridge/validate',
                 type: 'POST',
                 data: JSON.stringify({
+                    side: window.pegSide,
                     asset: $('#select-coin').val(),
                     network: $('#select-net').data('network'),
                     memo: $('#peg-target-memo').val()
