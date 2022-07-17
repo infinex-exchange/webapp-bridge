@@ -182,7 +182,7 @@ $(document).ready(function() {
         }, 750);
     }); 
     
-    // Submit withdraw
+    // Submit step1
     $('#peg-step1-form').on('submit', function(event) {
         // Prevent standard submit
         event.preventDefault();
@@ -212,6 +212,7 @@ $(document).ready(function() {
         }
         
         // Enable preloader
+        $('#bridge-preloader').height($('#bridge-step1').height());
         $('#bridge-step1').hide();
         $('#bridge-preloader').show();
             
