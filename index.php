@@ -79,7 +79,7 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row pb-3 flex-nowrap">
+                            <div class="row pt-3 flex-nowrap">
                                 <div class="col-auto me-auto">
                                     <h5 class="secondary">Confirmations target:</h5>
                                 </div>
@@ -91,10 +91,9 @@
                                 <div class="col-auto me-auto">
                                     <h5 class="secondary">Fee:</h5>
                                 </div>
-                                <div id="peg-fee-val" class="col-auto">
-                                    -
-                                </div>
-                                <div id="peg-fee-assetid" class="col-auto">
+                                <div class="col-auto">
+                                    <span id="peg-fee-val">-</span>
+                                    <span id="peg-fee-assetid"></span>
                                 </div>
                             </div>
                             <div class="row pt-3 pb-1">
