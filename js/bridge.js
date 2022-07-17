@@ -33,7 +33,7 @@ function updateStep1() {
             
             // Fee
             $('#peg-fee-val').html(data.fee);
-            $('#peg-fee-asset').html($('#select-coin').val());
+            $('#peg-fee-assetid').html($('#select-coin').val());
         } else {
             msgBox(data.error);
         }
