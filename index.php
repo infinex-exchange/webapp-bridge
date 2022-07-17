@@ -79,7 +79,7 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row ps-3 flex-nowrap">
+                            <div class="row pb-3 flex-nowrap">
                                 <div class="col-auto me-auto">
                                     <h5 class="secondary">Confirmations target:</h5>
                                 </div>
