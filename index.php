@@ -79,7 +79,15 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row py-3 flex-nowrap">
+                            <div class="row ps-3 flex-nowrap">
+                                <div class="col-auto me-auto">
+                                    <h5 class="secondary">Confirmations target:</h5>
+                                </div>
+                                <div id="peg-conf-target" class="col-auto">
+                                    -
+                                </div>
+                            </div>
+                            <div class="row pb-3 flex-nowrap">
                                 <div class="col-auto me-auto">
                                     <h5 class="secondary">Fee:</h5>
                                 </div>
