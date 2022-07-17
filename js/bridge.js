@@ -98,4 +98,145 @@ $(document).ready(function() {
     $('#select-net').on('change', function() {        
         updateStep1();
     });
+    
+    // Validate address
+    $('#peg-target-addr').on('input', function() {
+        if(typeof(window.addrTypingTimeout) !== 'undefined')
+            clearTimeout(window.addrTypingTimeout);
+        window.addrTypingTimeout = setTimeout(function() {
+            
+            $.ajax({
+                url: config.apiUrl + '/bridge/validate',
+                type: 'POST',
+                data: JSON.stringify({
+                    asset: $('#select-coin').val(),
+                    network: $('#select-net').data('network'),
+                    address: $('#peg-target-addr').val()
+                }),
+                contentType: "application/json",
+                dataType: "json",
+            })
+            .retry(config.retry)
+            .done(function (data) {
+                if(!data.success) {
+                    msgBox(data.error);
+                }
+                else if(!data.valid_address) {
+	                window.validAddress = false;
+                    $('#help-target-addr').show();
+                }
+                else {
+	                window.validAddress = true;
+                    $('#help-target-addr').hide();
+                }
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                msgBoxNoConn(false);
+            });
+            
+        }, 750);
+    });
+    
+    // Validate memo
+    $('#peg-target-memo').on('input', function() {
+        if(typeof(window.memoTypingTimeout) !== 'undefined')
+            clearTimeout(window.memoTypingTimeout);
+        window.memoTypingTimeout = setTimeout(function() {
+            if($('#peg-target-memo').val() == '') {
+                window.validMemo = false;
+                $('#help-target-memo').hide();
+                return;
+            }
+            
+            $.ajax({
+                url: config.apiUrl + '/bridge/validate',
+                type: 'POST',
+                data: JSON.stringify({
+                    asset: $('#select-coin').val(),
+                    network: $('#select-net').data('network'),
+                    memo: $('#peg-target-memo').val()
+                }),
+                contentType: "application/json",
+                dataType: "json",
+            })
+            .retry(config.retry)
+            .done(function (data) {
+                if(!data.success) {
+                    msgBox(data.error);
+                }
+                else if(!data.valid_memo) {
+	                window.validMemo = false;
+                    $('#help-target-memo').show();
+                }
+                else {
+	                window.validMemo = true;
+                    $('#help-target-memo').hide();
+                }
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                msgBoxNoConn(false);
+            });
+            
+        }, 750);
+    }); 
+    
+    // Submit withdraw
+    $('#peg-step1-form').on('submit', function(event) {
+        // Prevent standard submit
+        event.preventDefault();
+        
+        // Validate data
+        var address = $('#peg-target-addr').val();
+        if(address == '') {
+            msgBox('Missing address');
+            return;
+        }
+        
+        var data = new Object();
+        data['side'] = window.pegSide,
+        data['asset'] = $('#select-coin').val();
+        data['network'] = $('#select-net').data('network');
+        data['address'] = address;
+        
+        var memo = $('#peg-target-memo').val();
+        if(memo != '')
+            data['memo'] = memo;
+        
+        if(!window.validAddress ||
+           (memo != '' && !window.validMemo))
+        {
+	        msgBox('Fill the form correctly');
+	        return;
+        }
+        
+        // Enable preloader
+        $('#bridge-step1').hide();
+        $('#bridge-preloader').show();
+            
+        // Post
+        $.ajax({
+            url: config.apiUrl + '/bridge',
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: "application/json",
+            dataType: "json",
+        })
+        .retry(config.retry)
+        .done(function (data) {
+            if(data.success) {
+                $('#bridge-preloader').hide();
+                $('#bridge-step2').show();
+            }
+            else {
+                msgBox(data.error);
+                $('#bridge-preloader').hide();
+                $('#bridge-step1').show();
+            }
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            msgBoxNoConn(false);
+            $('#bridge-preloader').hide();
+            $('#bridge-step1').show();
+        });
+    });
 });

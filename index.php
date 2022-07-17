@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                             <div class="row pt-3 pb-1">
-                                <form>
+                                <form id="peg-step1-form">
                                     <button type="submit" class="btn btn-primary d-block ms-auto w-25">Submit</button>
                                 </form>
                             </div>
