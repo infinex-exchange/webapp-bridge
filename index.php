@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 
-                <div class="col-9 mx-auto py-5 d-lg-none">
+                <div class="col-7 mx-auto py-5 d-lg-none">
                     <img src="/bridge/img/bridge.png" class="img-fluid">
                 </div>
 
