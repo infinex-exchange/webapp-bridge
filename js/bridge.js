@@ -7,7 +7,7 @@ function updateStep1() {
         $('#peg-fee-val').html('-');
         $('#peg-fee-assetid').html('');
         $('#peg-target-addr').prop('readonly', true).val('');
-        $('#peg-memo-wrapper').hide();
+        $('.peg-memo-wrapper').hide();
         
         return;
     }
@@ -35,10 +35,10 @@ function updateStep1() {
             // Memo
             if(typeof(data.memo_name) !== 'undefined') {
                 $('#peg-memo-name').html(data.memo_name + ':');
-                $('#peg-memo-wrapper').show();
+                $('.peg-memo-wrapper').show();
             }
             else {
-                $('#peg-memo-wrapper').hide();
+                $('.peg-memo-wrapper').hide();
             }
             
             // Conf target
