@@ -1,3 +1,48 @@
+function updateStep1() {
+    $.ajax({
+        url: config.apiUrl + '/bridge/info',
+        type: 'POST',
+        data: JSON.stringify({
+            side: window.pegSide,
+            asset: $('#select-coin').val(),
+            network: $('#select-net').data('network')
+        }),
+        contentType: "application/json",
+        dataType: "json",
+    })
+    .retry(config.retry)
+    .done(function (data) {
+        if(data.success) {
+            // Reset validation variables
+            window.validAddress = false;
+            window.validMemo = false;
+            
+            $('#peg-target-addr').prop('readonly', false).val('');
+            
+            // Memo
+            if(typeof(data.memo_name) !== 'undefined') {
+                $('#peg-memo-name').html(data.memo_name + ':');
+                $('#peg-memo-wrapper').show();
+            }
+            else {
+                $('#peg-memo-wrapper').hide();
+            }
+            
+            // Conf target
+            $('#peg-conf-target').html(data.confirms_target);
+            
+            // Fee
+            $('#peg-fee-val').html(data.fee);
+            $('#peg-fee-asset').html($('#select-coin').val());
+        } else {
+            msgBox(data.error);
+        }
+    })
+    .fail(function (jqXHR, textStatus, errorThrown) {
+        msgBoxNoConn(false);
+    });
+}
+
 $(document).ready(function() {
     window.renderingStagesTarget = 1;
     
@@ -29,6 +74,8 @@ $(document).ready(function() {
             $('.peg-in-text').hide();
             $('.peg-out-text').show();
         }
+        
+        updateStep1();
     });
     
     $('#select-coin').on('change', function() {
@@ -36,40 +83,6 @@ $(document).ready(function() {
     });
     
     $('#select-net').on('change', function() {        
-        $.ajax({
-            url: config.apiUrl + '/bridge/info',
-            type: 'POST',
-            data: JSON.stringify({
-                side: window.pegSide,
-                asset: $('#select-coin').val(),
-                network: $('#select-net').data('network')
-            }),
-            contentType: "application/json",
-            dataType: "json",
-        })
-        .retry(config.retry)
-        .done(function (data) {
-            if(data.success) {
-                // Reset validation variables
-                window.validAddress = false;
-                window.validMemo = false;
-                
-                $('#peg-target-addr').prop('readonly', false).val('');
-                
-                // Memo
-                if(typeof(data.memo_name) !== 'undefined') {
-                    $('#peg-memo-name').html(data.memo_name + ':');
-                    $('#peg-memo-wrapper').show();
-                }
-                else {
-                    $('#peg-memo-wrapper').hide();
-                }
-            } else {
-                msgBox(data.error);
-            }
-        })
-        .fail(function (jqXHR, textStatus, errorThrown) {
-            msgBoxNoConn(false);
-        });
+        updateStep1();
     });
 });
