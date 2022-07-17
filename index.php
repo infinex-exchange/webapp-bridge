@@ -79,9 +79,9 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row py-2 text-right">
+                            <div class="row py-2">
                                 <form>
-                                    <button type="submit" class="btn btn-primary float-right w-25">Submit</button>
+                                    <button type="submit" class="btn btn-primary d-block ms-auto w-25">Submit</button>
                                 </form>
                             </div>
                         </div>
