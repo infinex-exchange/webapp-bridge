@@ -104,8 +104,8 @@
                         </div>
                         
                         <div id="bridge-preloader">
-                            <div class="row py-2 text-center my-auto">
-                                <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+                            <div class="row py-2 text-center h-100">
+                                <i class="fa-solid fa-spinner fa-spin-pulse fa-2x my-auto"></i>
                             </div>
                         </div>
                         
