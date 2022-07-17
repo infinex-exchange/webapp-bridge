@@ -122,6 +122,10 @@
                         </div>                  
                     </div>
                 </div>
+                
+                <div class="col-9 mx-auto py-5 d-lg-none">
+                    <img src="/bridge/img/bridge.png" class="img-fluid">
+                </div>
 
             </div>
         
