@@ -79,6 +79,10 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
+                            <div class="row py-3">
+                                <span class="secondary">Fee:</span>
+                                <span class="float-end" id="peg-fee">-</span>
+                            </div>
                             <div class="row pt-3 pb-1">
                                 <form>
                                     <button type="submit" class="btn btn-primary d-block ms-auto w-25">Submit</button>
