@@ -80,8 +80,8 @@
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
                             <div class="row py-2 text-right">
-                                <form class="float-end">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                <form>
+                                    <button type="submit" class="btn btn-primary float-right w-25">Submit</button>
                                 </form>
                             </div>
                         </div>
