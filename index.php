@@ -79,9 +79,15 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row py-3">
-                                <span class="secondary">Fee:</span>
-                                <span class="float-end" id="peg-fee">-</span>
+                            <div class="row py-3 flex-nowrap">
+                                <div class="col-auto secondary me-auto">
+                                    Fee:
+                                </div>
+                                <div id="peg-fee-val" class="col-auto">
+                                    -
+                                </div>
+                                <div id="peg-fee-assetid" class="col-auto">
+                                </div>
                             </div>
                             <div class="row pt-3 pb-1">
                                 <form>
