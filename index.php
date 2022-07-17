@@ -30,7 +30,7 @@
                                 and gives you direct access to the world of DeFi on the BPX blockchain.
                             </p>
                         </div>
-                        <div class="col-10 d-none d-lg-block">
+                        <div class="col-9 mx-auto d-none d-lg-block">
                             <img src="/bridge/img/bridge.png" class="img-fluid">
                         </div>
                     </div>
