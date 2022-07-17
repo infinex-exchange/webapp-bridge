@@ -112,20 +112,20 @@
                         <div id="bridge-step2">
                             <div class="row py-2 flex-nowrap justify-content-evenly">
                                 <div class="col-auto text-center">
-                                    <div class="p-2 rounded text-center" style="background-color: var(--color-input);">
-                                        <img id="peg-from-net-img" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                    <div class="rounded text-center" style="background-color: var(--color-input);">
+                                        <img id="peg-from-net-img" class="p-2" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         <br>
-                                        <span id="peg-from-net" class="p-1 secondary"></span>
+                                        <span id="peg-from-net" class="p-2 secondary"></span>
                                     </div>
                                 </div>
                                 <div class="col-auto my-auto">
                                     <i class="fa-solid fa-arrow-right fa-2x"></i>
                                 </div>
                                 <div class="col-auto text-center">
-                                    <div class="p-2 rounded text-center" style="background-color: var(--color-input);">
-                                        <img id="peg-to-net-img" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                    <div class="rounded text-center" style="background-color: var(--color-input);">
+                                        <img id="peg-to-net-img" class="p-2" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                                         <br>
-                                        <span id="peg-to-net" class="p-1 secondary"></span>
+                                        <span id="peg-to-net" class="p-2 secondary"></span>
                                     </div>
                                 </div>
                             </div>
