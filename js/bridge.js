@@ -1,11 +1,24 @@
 function updateStep1() {
+    var asset = $('#select-coin').val();
+    var network = $('#select-net').data('network');
+    
+    if(!asset || !network) {
+        $('#peg-conf-target').html('-');
+        $('#peg-fee-val').html('-');
+        $('#peg-fee-assetid').html('');
+        $('#peg-target-addr').prop('readonly', true).val('');
+        $('#peg-memo-wrapper').hide();
+        
+        return;
+    }
+    
     $.ajax({
         url: config.apiUrl + '/bridge/info',
         type: 'POST',
         data: JSON.stringify({
             side: window.pegSide,
-            asset: $('#select-coin').val(),
-            network: $('#select-net').data('network')
+            asset: asset,
+            network: network
         }),
         contentType: "application/json",
         dataType: "json",
@@ -33,7 +46,7 @@ function updateStep1() {
             
             // Fee
             $('#peg-fee-val').html(data.fee);
-            $('#peg-fee-assetid').html($('#select-coin').val());
+            $('#peg-fee-assetid').html(asset);
         } else {
             msgBox(data.error);
         }
