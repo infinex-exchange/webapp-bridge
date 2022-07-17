@@ -227,6 +227,12 @@ $(document).ready(function() {
         .retry(config.retry)
         .done(function (data) {
             if(data.success) {
+                // Icons
+                $('#peg-from-net-img').attr('src', data.source_net_icon);
+                $('#peg-to-net-img').attr('src', data.target_net_icon);
+                $('#peg-from-net').html(data.source_net_desc);
+                $('#peg-to-net').html(data.target_net_desc);
+                
                 $('#bridge-preloader').hide();
                 $('#bridge-step2').show();
             }
