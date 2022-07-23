@@ -248,4 +248,6 @@ $(document).ready(function() {
             $('#bridge-step1').show();
         });
     });
+    
+    initSelectCoin('/bridge/assets');
 });
