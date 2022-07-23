@@ -102,10 +102,10 @@
                         </div>
                         
                         <div id="bridge-step2">
-                            <div class="row py-2">
+                            <div class="row pt-3">
                                 <h3>Your bridge has been created!</h3>
                             </div>
-                            <div class="row py-2 flex-nowrap justify-content-evenly">
+                            <div class="row pb-3 flex-nowrap justify-content-evenly">
                                 <div class="col-auto text-center">
                                     <div class="p-2 rounded text-center" style="background-color: var(--color-input); min-width: 100px;">
                                         <img id="peg-from-net-img" class="p-2" width="40" height="40" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
@@ -127,7 +127,7 @@
                             <div class="row pt-3">
                                 <h3>Deposit funds to this address:</h3>
                             </div>
-                            <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
+                            <div class="row pb-3 flex-nowrap rounded" style="background-color: var(--color-input);">
                                 <div class="col-auto my-auto wrap">
                                     <span class="wrap" id="peg-deposit-addr"></span>
                                 </div>
@@ -139,7 +139,7 @@
                                 <div class="row pt-3">
                                     <h3 id="peg-deposit-memo-name"></h3>
                                 </div>
-                                <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
+                                <div class="row pb-3 flex-nowrap rounded" style="background-color: var(--color-input);">
                                     <div class="col-auto my-auto wrap">
                                         <span class="wrap" id="peg-deposit-memo"></span>
                                     </div>
@@ -165,6 +165,17 @@
                                     <span class="peg-fee-assetid"></span>
                                 </div>
                             </div>
+                            
+                            <div class="row py-3">
+                                <div class="col-auto my-auto text-center" style="width: 60px">
+                                    <i style="color: var(--color-ultra)" class="fa-solid fa-lock fa-2x"></i>
+                                </div>
+                                <div class="col small my-auto">
+                                    Make sure you are visiting:<br>
+                                    <strong class="primary">https://vayamos.cc</strong>
+                                </div>
+                            </div>
+                            
                         </div>                  
                     </div>
                 </div>
