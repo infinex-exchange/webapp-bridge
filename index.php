@@ -128,7 +128,7 @@
                                 <h3>Deposit funds to this address:</h3>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 px-2">
                                     <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
                                         <div class="col-auto my-auto wrap">
                                             <span class="wrap" id="peg-deposit-addr"></span>
@@ -144,7 +144,7 @@
                                     <h3 id="peg-deposit-memo-name"></h3>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-12 px-2">
                                     <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
                                         <div class="col-auto my-auto wrap">
                                             <span class="wrap" id="peg-deposit-memo"></span>
