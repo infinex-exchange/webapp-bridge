@@ -92,7 +92,7 @@ $(document).ready(function() {
     });
     
     $('#select-coin').on('change', function() {
-        initSelectNet( $('#select-coin').val() );
+        initSelectNet($('#select-coin').val(), '/bridge/networks');
     });
     
     $('#select-net').on('change', function() {        
