@@ -79,21 +79,13 @@
                                 </form>
                                 <small id="help-target-memo" class="form-text" style="display: none">Invalid format</small>
                             </div>
-                            <div class="row pt-3 flex-nowrap">
-                                <div class="col-auto me-auto">
-                                    <h5 class="secondary">Confirmations target:</h5>
-                                </div>
-                                <div id="peg-conf-target" class="col-auto">
-                                    -
-                                </div>
-                            </div>
                             <div class="row pb-3 flex-nowrap">
                                 <div class="col-auto me-auto">
                                     <h5 class="secondary">Fee:</h5>
                                 </div>
                                 <div class="col-auto">
-                                    <span id="peg-fee-val">-</span>
-                                    <span id="peg-fee-assetid"></span>
+                                    <span class="peg-fee-val">-</span>
+                                    <span class="peg-fee-assetid"></span>
                                 </div>
                             </div>
                             <div class="row pt-3 pb-1">
@@ -154,6 +146,23 @@
                                     <div class="col-auto my-auto">
                                         <a href="#_" class="secondary" data-copy="#peg-deposit-memo" onClick="copyButton(this); event.stopPropagation();"><i class="fa-solid fa-copy fa-xl"></i></a>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row pt-3 flex-nowrap">
+                                <div class="col-auto me-auto">
+                                    <h5 class="secondary">Confirmations required:</h5>
+                                </div>
+                                <div id="peg-conf-target" class="col-auto">
+                                    -
+                                </div>
+                            </div>
+                            <div class="row pb-3 flex-nowrap">
+                                <div class="col-auto me-auto">
+                                    <h5 class="secondary">Fee:</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="peg-fee-val">-</span>
+                                    <span class="peg-fee-assetid"></span>
                                 </div>
                             </div>
                         </div>                  

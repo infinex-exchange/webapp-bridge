@@ -4,8 +4,8 @@ function updateStep1() {
     
     if(!asset || !network) {
         $('#peg-conf-target').html('-');
-        $('#peg-fee-val').html('-');
-        $('#peg-fee-assetid').html('');
+        $('.peg-fee-val').html('-');
+        $('.peg-fee-assetid').html('');
         $('#peg-target-addr').prop('readonly', true).val('');
         $('.peg-memo-wrapper').hide();
         
