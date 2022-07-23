@@ -45,8 +45,8 @@ function updateStep1() {
             $('#peg-conf-target').html(data.confirms_target);
             
             // Fee
-            $('#peg-fee-val').html(data.fee);
-            $('#peg-fee-assetid').html(asset);
+            $('.peg-fee-val').html(data.fee);
+            $('.peg-fee-assetid').html(asset);
         } else {
             msgBox(data.error);
         }
