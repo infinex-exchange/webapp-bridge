@@ -110,6 +110,9 @@
                         </div>
                         
                         <div id="bridge-step2">
+                            <div class="row py-2">
+                                <h3>Your bridge has been created!</h3>
+                            </div>
                             <div class="row py-2 flex-nowrap justify-content-evenly">
                                 <div class="col-auto text-center">
                                     <div class="rounded text-center" style="background-color: var(--color-input);">
@@ -130,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="row py-2">
-                                <h3>Address:</h3>
+                                <h3>Deposit funds to this address:</h3>
                             </div>
                             <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
                                 <div class="col-auto my-auto wrap">
