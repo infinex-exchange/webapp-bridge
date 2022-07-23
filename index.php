@@ -140,6 +140,19 @@
                                     <a href="#_" class="secondary" data-copy="#peg-deposit-addr" onClick="copyButton(this); event.stopPropagation();"><i class="fa-solid fa-copy fa-xl"></i></a>
                                 </div>
                             </div>
+                            <div id="peg-deposit-memo-wrapper">
+                                <div class="row py-2">
+                                    <h3 id="peg-deposit-memo-name"></h3>
+                                </div>
+                                <div class="row py-2 flex-nowrap rounded" style="background-color: var(--color-input);">
+                                    <div class="col-auto my-auto wrap">
+                                        <span class="wrap" id="peg-deposit-memo"></span>
+                                    </div>
+                                    <div class="col-auto my-auto">
+                                        <a href="#_" class="secondary" data-copy="#peg-deposit-memo" onClick="copyButton(this); event.stopPropagation();"><i class="fa-solid fa-copy fa-xl"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>                  
                     </div>
                 </div>

@@ -233,6 +233,19 @@ $(document).ready(function() {
                 $('#peg-from-net').html(data.source_net_desc);
                 $('#peg-to-net').html(data.target_net_desc);
                 
+                // Address
+                $('#peg-deposit-addr').html(data.address);
+                
+                // Memo
+                if(typeof(data.memo) !== 'undefined') {
+                    $('#peg-deposit-memo-name').html(data.memo_name);
+                    $('#peg-deposit-memo').html(data.memo);
+                    $('#peg-deposit-memo-wrapper').show();
+                }
+                else {
+                    $('#peg-deposit-memo-wrapper').hide();
+                }
+                
                 $('#bridge-preloader').hide();
                 $('#bridge-step2').show();
             }
