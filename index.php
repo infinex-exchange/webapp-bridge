@@ -19,7 +19,7 @@
             <div class="row h-rest m-0">
                 <div class="col-12 col-lg-6 me-auto my-auto px-4 py-5">
                     <div class="row">
-                        <div class="col-12 jumbotron">
+                        <div class="col-12">
                             <h1>Vayamos Bridge</h1>
                             <p>
                                 With Vayamos Bridge you can wrap any asset supported by Vayamos Exchange to BPX blockchain tokens.
