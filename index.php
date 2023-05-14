@@ -22,12 +22,7 @@
                         <div class="col-12">
                             <h1>Infinex Bridge</h1>
                             <p>
-                                With Infinex Bridge you can wrap any asset supported by Infinex to BPX blockchain tokens.
-                                You can hold your wrapped tokens in your BPX wallet, trade them using offers and transfer them without fee.
-                                BPX tokens are pegged on a 1:1 basis to the underlying asset.
-                                You can redeem your wrapped tokens back to the original asset at any time.
-                                This cross-chain bridge improves interoperability between BPX and other blockchains
-                                and gives you direct access to the world of DeFi on the BPX blockchain.
+                                The Infinex Bridge has been temporarily adapted to allow the transfer of funds from the old BPX V2 chain to the new V3.
                             </p>
                         </div>
                         <div class="col-9 mx-auto d-none d-lg-block">
@@ -40,10 +35,13 @@
                     <div class="p-2 p-lg-4 ui-card-light rounded">
                         <div id="bridge-step1">
                             <div class="row pt-1 pb-3">
-                                <div class="col-6 ps-2 pe-1">
+                                <div class="col-12 px-2">
                                     <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
                                 </div>
                                 <!-- TEMP
+                                <div class="col-6 ps-2 pe-1">
+                                    <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
+                                </div>
                                 <div class="col-6 ps-1 pe-2">
                                     <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
