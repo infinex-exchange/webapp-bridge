@@ -262,5 +262,5 @@ $(document).ready(function() {
         });
     });
     
-    initSelectCoin('/bridge/assets');
+    initSelectCoin('/bridge/assets', true);
 });
