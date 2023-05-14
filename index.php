@@ -22,7 +22,7 @@
                         <div class="col-12">
                             <h1>Infinex Bridge</h1>
                             <p>
-                                The Infinex Bridge has been temporarily adapted to allow the transfer of funds from the old BPX V2 chain to the new V3.
+                                Infinex Bridge has been temporarily adapted to allow transferring your BPX coins from the old V2 chain to the new V3.
                             </p>
                         </div>
                         <div class="col-9 mx-auto d-none d-lg-block">
@@ -41,7 +41,7 @@
                                 <!-- TEMP
                                 <div class="col-6 ps-2 pe-1">
                                     <button type="button" class="btn btn-primary w-100 peg-toggle" data-side="peg-in">Peg-in</button>
-                                </div>
+                                </div>                                
                                 <div class="col-6 ps-1 pe-2">
                                     <button type="button" class="btn btn-secondary w-100 peg-toggle" data-side="peg-out">Peg-out</button>
                                 </div>
