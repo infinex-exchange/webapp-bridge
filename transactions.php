@@ -51,7 +51,7 @@
         </div>
         </div>
         
-        <script src="/js/transactions.js?<?php echo filemtime(__DIR__.'/js/transactions.js'); ?>"></script>
+        <script src="/bridge/js/transactions.js?<?php echo filemtime(__DIR__.'/js/transactions.js'); ?>"></script>
         
         <?php include('../../templates/modals.php'); ?>
         <?php include('../../templates/vanilla_mobile_nav.php'); ?>
