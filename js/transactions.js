@@ -79,7 +79,7 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Source Txid:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-break">
                 ${dTxid}
             </div>
             <div class="col-6 d-lg-none secondary">
@@ -97,7 +97,7 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Destination Txid:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-break">
                 ${wTxid}
             </div>
         </div>
