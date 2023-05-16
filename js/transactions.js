@@ -91,7 +91,7 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Destination transaction status:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 ${wStatusStr}
             </div>
             <div class="col-6 d-lg-none secondary">
