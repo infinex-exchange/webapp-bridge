@@ -39,6 +39,8 @@
                 <div class="col">
                     <h5>Src txid</h5>
                 </div>
+                <div class="col-1">
+                </div>
                 <div class="col">
                     <h5>Dst net</h5>
                 </div>

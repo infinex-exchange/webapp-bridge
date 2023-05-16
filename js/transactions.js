@@ -82,6 +82,9 @@ function renderTxHistoryItem(data) {
             <div class="col-6 col-lg text-end text-lg-start text-break">
                 ${dTxid}
             </div>
+            <div class="col-1 d-none d-lg-block">
+                <i class="fa-solid fa-right-long"></i>
+            </div>
             <div class="col-6 d-lg-none secondary">
                 Destination network:
             </div>
