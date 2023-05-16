@@ -19,30 +19,30 @@ function renderTxHistoryItem(data) {
     
     var confHtml = '';
     if(data.status != 'DONE' &&
-       typeof(data.deposit.confirms) !== 'undefined' &&
-       typeof(data.deposit.confirms_target) !== 'undefined' &&
+       data.deposit.confirms &&
+       data.deposit.confirms_target &&
        data.deposit.confirms != data.deposit.confirms_target
     )
         confHtml = `<br><span class="secondary">${data.deposit.confirms}&nbsp;/&nbsp;${data.deposit.confirms_target}</span>`;
     
     var dTxid = '-';
-    if(typeof(data.deposit.txid) !== 'undefined')
+    if(data.deposit.txid)
         dTxid = data.deposit.txid;
         
     var dNetworkDescription = '-';
-    if(typeof(data.deposit.network_description) !== 'undefined')
+    if(data.deposit.network_description)
         dNetworkDescription = data.deposit.network_description;
     
     var wTxid = '-';
-    if(typeof(data.withdrawal.txid) !== 'undefined')
+    if(data.withdrawal.txid)
         wTxid = data.withdrawal.txid;
     
     var wNetworkDescription = '-';
-    if(typeof(data.withdrawal.network_description) !== 'undefined')
+    if(data.withdrawal.network_description)
         wNetworkDescription = data.withdrawal.network_description;
     
     var wStatusStr = '-';
-    if(typeof(data.withdrawal.status) !== 'undefined')
+    if(data.withdrawal.status)
         wStatusStr = `
             <i class="${txStatusIconDict[data.withdrawal.status]}"></i>
             ${txStatusDict[data.withdrawal.status]}
