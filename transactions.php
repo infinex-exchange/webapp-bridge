@@ -35,6 +35,7 @@
                 </div>
                 <div class="col">
                     <h5>Src status</h5>
+                </div>
                 <div class="col">
                     <h5>Src txid</h5>
                 </div>
