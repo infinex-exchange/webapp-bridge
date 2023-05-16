@@ -23,7 +23,7 @@ function renderTxHistoryItem(data) {
        typeof(data.deposit.confirms_target) !== 'undefined' &&
        data.deposit.confirms != data.deposit.confirms_target
     )
-        confHtml = `<br><span class="secondary">${data.confirms}&nbsp;/&nbsp;${data.confirms_target}</span>`;
+        confHtml = `<br><span class="secondary">${data.deposit.confirms}&nbsp;/&nbsp;${data.deposit.confirms_target}</span>`;
     
     var dTxid = '-';
     if(typeof(data.deposit.txid) !== 'undefined')
@@ -45,7 +45,7 @@ function renderTxHistoryItem(data) {
                 Amount:
             </div>
             <div class="col-6 col-lg text-end">
-                ${data.deposit.amount} ${data.asset}
+                ${data.amount} ${data.asset}
             </div>
             <div class="col-6 d-lg-none secondary">
                 Txid:
