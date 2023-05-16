@@ -53,25 +53,25 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Time:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 ${cTime}
             </div>
             <div class="col-6 d-lg-none secondary">
                 Amount:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 ${data.amount} ${data.asset}
             </div>
             <div class="col-6 d-lg-none secondary">
                 Source network:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 ${dNetworkDescription}
             </div>
             <div class="col-6 d-lg-none secondary">
                 Source transaction status:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 <i class="${txStatusIconDict[data.deposit.status]}"></i>
                 ${txStatusDict[data.deposit.status]}
                 ${confHtml}
@@ -79,13 +79,13 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Source Txid:
             </div>
-            <div class="col-6 col-lg text-end text-break">
+            <div class="col-6 col-lg text-end text-lg-start text-break">
                 ${dTxid}
             </div>
             <div class="col-6 d-lg-none secondary">
                 Destination network:
             </div>
-            <div class="col-6 col-lg text-end">
+            <div class="col-6 col-lg text-end text-lg-start">
                 ${wNetworkDescription}
             </div>
             <div class="col-6 d-lg-none secondary">
@@ -97,7 +97,7 @@ function renderTxHistoryItem(data) {
             <div class="col-6 d-lg-none secondary">
                 Destination Txid:
             </div>
-            <div class="col-6 col-lg text-end text-break">
+            <div class="col-6 col-lg text-end text-lg-start text-break">
                 ${wTxid}
             </div>
         </div>
