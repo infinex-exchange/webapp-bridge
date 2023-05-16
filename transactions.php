@@ -24,20 +24,28 @@
             </div>
             
             <div class="row p-2 secondary d-none d-lg-flex">
-                <div style="width: 20%">
+                <div class="col">
                     <h5>Date</h5>
                 </div>
-                <div style="width: 20%">
-                    <h5>Type</h5>
-                </div>
-                <div style="width: 20%">
-                    <h5>Asset</h5>
-                </div>
-                <div class="text-end" style="width: 20%">
+                <div class="col">
                     <h5>Amount</h5>
                 </div>
-                <div class="text-end" style="width: 20%">
-                    <h5>Status</h5>
+                <div class="col">
+                    <h5>Src net</h5>
+                </div>
+                <div class="col">
+                    <h5>Src status</h5>
+                <div class="col">
+                    <h5>Src txid</h5>
+                </div>
+                <div class="col">
+                    <h5>Dst net</h5>
+                </div>
+                <div class="col">
+                    <h5>Dst status</h5>
+                </div>
+                <div class="col">
+                    <h5>Dst txid</h5>
                 </div>
             </div>
             
