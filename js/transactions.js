@@ -50,57 +50,57 @@ function renderTxHistoryItem(data) {
     
     return `
         <div class="row p-2 hoverable bridge-transaction-item" data-xid="${data.deposit.xid}">
-            <div class="col-6 d-lg-none secondary">
+            <div class="col-3 d-lg-none secondary">
                 Time:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 ${cTime}
             </div>
-            <div class="col-6 d-lg-none secondary">
+            <div class="col-3 d-lg-none secondary">
                 Amount:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 ${data.amount} ${data.asset}
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Source network:
+            <div class="col-3 d-lg-none secondary">
+                Src net:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 ${dNetworkDescription}
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Source transaction status:
+            <div class="col-3 d-lg-none secondary">
+                Src status:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 <i class="${txStatusIconDict[data.deposit.status]}"></i>
                 ${txStatusDict[data.deposit.status]}
                 ${confHtml}
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Source Txid:
+            <div class="col-3 d-lg-none secondary">
+                Src txid:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start text-break">
+            <div class="col-9 col-lg text-end text-lg-start text-break">
                 ${dTxid}
             </div>
             <div class="d-none d-lg-block" style="width: 20px;">
                 <i class="fa-solid fa-right-long"></i>
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Destination network:
+            <div class="col-3 d-lg-none secondary">
+                Dst net:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 ${wNetworkDescription}
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Destination transaction status:
+            <div class="col-3 d-lg-none secondary">
+                Dst status:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start">
+            <div class="col-9 col-lg text-end text-lg-start">
                 ${wStatusStr}
             </div>
-            <div class="col-6 d-lg-none secondary">
-                Destination Txid:
+            <div class="col-3 d-lg-none secondary">
+                Dst txid:
             </div>
-            <div class="col-6 col-lg text-end text-lg-start text-break">
+            <div class="col-9 col-lg text-end text-lg-start text-break">
                 ${wTxid}
             </div>
         </div>
