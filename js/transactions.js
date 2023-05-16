@@ -33,6 +33,21 @@ function renderTxHistoryItem(data) {
     if(typeof(data.deposit.network_description) !== 'undefined')
         dNetworkDescription = data.deposit.network_description;
     
+    var wTxid = '-';
+    if(typeof(data.withdrawal.txid) !== 'undefined')
+        wTxid = data.withdrawal.txid;
+    
+    var wNetworkDescription = '-';
+    if(typeof(data.withdrawal.network_description) !== 'undefined')
+        wNetworkDescription = data.withdrawal.network_description;
+    
+    var wStatusStr = '-';
+    if(typeof(data.withdrawal.status) !== 'undefined')
+        wStatusStr = `
+            <i class="${txStatusIconDict[data.withdrawal.status]}"></i>
+            ${txStatusDict[data.withdrawal.status]}
+        `;
+    
     return `
         <div class="row p-2 hoverable bridge-transaction-item" data-xid="${data.deposit.xid}">
             <div class="col-6 d-lg-none secondary">
@@ -48,18 +63,42 @@ function renderTxHistoryItem(data) {
                 ${data.amount} ${data.asset}
             </div>
             <div class="col-6 d-lg-none secondary">
-                Txid:
+                Source network:
             </div>
             <div class="col-6 col-lg text-end">
-                ${dTxid}
+                ${dNetworkDescription}
             </div>
             <div class="col-6 d-lg-none secondary">
-                Status:
+                Source transaction status:
             </div>
             <div class="col-6 col-lg text-end">
                 <i class="${txStatusIconDict[data.deposit.status]}"></i>
                 ${txStatusDict[data.deposit.status]}
                 ${confHtml}
+            </div>
+            <div class="col-6 d-lg-none secondary">
+                Source Txid:
+            </div>
+            <div class="col-6 col-lg text-end">
+                ${dTxid}
+            </div>
+            <div class="col-6 d-lg-none secondary">
+                Destination network:
+            </div>
+            <div class="col-6 col-lg text-end">
+                ${wNetworkDescription}
+            </div>
+            <div class="col-6 d-lg-none secondary">
+                Destination transaction status:
+            </div>
+            <div class="col-6 col-lg text-end">
+                ${wStatusStr}
+            </div>
+            <div class="col-6 d-lg-none secondary">
+                Destination Txid:
+            </div>
+            <div class="col-6 col-lg text-end">
+                ${wTxid}
             </div>
         </div>
     `;
