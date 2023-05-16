@@ -1,0 +1,14 @@
+/* Navbar */
+
+.navbar-bridge {
+    background-color: var(--color-input) !important;
+    z-index: 999 !important;
+}
+
+.navbar-mobile .nav-separ {
+    display: none !important;
+}
+
+.navbar-bridge br {
+    display: none !important;
+}

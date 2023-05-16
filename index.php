@@ -3,6 +3,7 @@
     <head>
         <?php include(__DIR__.'/../../templates/head.php'); ?>
         <script src="/js/ajax_scroll.js?<?php echo filemtime(__DIR__.'/../../js/ajax_scroll.js'); ?>"></script>
+        <link rel="stylesheet" href="/bridge/css/styles.css?<?php echo filemtime(__DIR__.'/css/styles.css'); ?>">
         <title>Bridge - Infinex</title>
     </head>
     <body class="body-background">
@@ -12,6 +13,7 @@
         
         <!-- Navbar -->
         <?php include(__DIR__.'/../../templates/navbar.php'); ?>
+        <?php include(__DIR__.'/templates/navbar.php'); ?>
         
         <!-- Root container -->
         <div id="root" class="container-fluid container-1500 h-rest pt-2 p-0">
@@ -223,7 +225,7 @@
         
         <!-- Footer -->
         <?php include(__DIR__.'/../../templates/footer.html'); ?>
-        <?php include(__DIR__.'/../../templates/vanilla_mobile_nav.php'); ?>
+        <?php include(__DIR__.'/templates/mobile_nav.php'); ?>
     
     </body>
 </html>
