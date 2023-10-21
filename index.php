@@ -53,14 +53,14 @@
                                 <h3 class="peg-out-text">Asset to peg-out:</h3>
                             </div>
                             <div class="row pb-3">
-                                <?php include(__DIR__.'/templates/select_coin.php'); ?>
+                                <?php include(__DIR__.'/../../templates/select_coin.php'); ?>
                             </div>
                             <div class="row pt-3">
                                 <h3 class="peg-in-text">Source network:</h3>
                                 <h3 class="peg-out-text">Destination network:</h3>
                             </div>
                             <div class="row pb-3">
-                                <?php include(__DIR__.'/templates/select_net.php'); ?>
+                                <?php include(__DIR__.'/../../templates/select_net.php'); ?>
                             </div>
                             <div class="row pt-3">
                                 <h3>Destination address:</h3>
