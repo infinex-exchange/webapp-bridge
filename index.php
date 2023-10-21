@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include(__DIR__.'/../../templates/head.php'); ?>
+        <?php include(__DIR__.'/../../inc/head.php'); ?>
         <script src="/js/ajax_scroll.js?<?php echo filemtime(__DIR__.'/../../js/ajax_scroll.js'); ?>"></script>
         <link rel="stylesheet" href="/bridge/css/styles.css?<?php echo filemtime(__DIR__.'/css/styles.css'); ?>">
         <title>Bridge - Infinex</title>
@@ -9,10 +9,9 @@
     <body class="body-background">
     
         <!-- Preloader -->
-        <?php include(__DIR__.'/../../templates/preloader.html'); ?>
+        <?php include(__DIR__.'/../../inc/body.php'); ?>
         
         <!-- Navbar -->
-        <?php include(__DIR__.'/../../templates/navbar.php'); ?>
         <?php include(__DIR__.'/templates/navbar.php'); ?>
         
         <!-- Root container -->
@@ -220,11 +219,10 @@
         <!-- / Root container -->
         </div>
         
-        <?php include(__DIR__.'/../../templates/modals.php'); ?>
         <script src="/bridge/js/bridge.js?<?php echo filemtime(__DIR__.'/js/bridge.js'); ?>"></script>
         
         <!-- Footer -->
-        <?php include(__DIR__.'/../../templates/footer.html'); ?>
+        <?php include(__DIR__.'/../../inc/footer.php'); ?>
         <?php include(__DIR__.'/templates/mobile_nav.php'); ?>
     
     </body>

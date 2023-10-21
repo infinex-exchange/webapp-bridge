@@ -9,7 +9,7 @@
     <body>
     
         <!-- Preloader -->
-        <?php include('../../inc/body.html'); ?>
+        <?php include('../../inc/body.php'); ?>
         
         <!-- Navbar -->
         <?php include(__DIR__.'/templates/navbar.php'); ?>
@@ -65,7 +65,7 @@
         
         <script src="/bridge/js/transactions.js?<?php echo filemtime(__DIR__.'/js/transactions.js'); ?>"></script>
         
-        <?php include(__DIR__.'/inc/vanilla_mobile_nav.php'); ?>
+        <?php include(__DIR__.'/templates/mobile_nav.php'); ?>
     
     </body>
 </html>
